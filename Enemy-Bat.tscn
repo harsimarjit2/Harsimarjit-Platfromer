@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://c2bx52thxxd0l"]
+
+[ext_resource type="Texture2D" uid="uid://bphijw206kjk2" path="res://assets/Props/Bat_Sprite_Sheet.png" id="1_h6yp1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jb0m2"]
+atlas = ExtResource("1_h6yp1")
+region = Rect2(0, 0, 16, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r5wmm"]
+atlas = ExtResource("1_h6yp1")
+region = Rect2(16, 0, 16, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mef4j"]
+atlas = ExtResource("1_h6yp1")
+region = Rect2(32, 0, 16, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kg2g0"]
+atlas = ExtResource("1_h6yp1")
+region = Rect2(48, 0, 16, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d0m2d"]
+atlas = ExtResource("1_h6yp1")
+region = Rect2(64, 0, 16, 18)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e6ht7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jb0m2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r5wmm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mef4j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kg2g0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d0m2d")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=604425605]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=789088317]
+sprite_frames = SubResource("SpriteFrames_e6ht7")
+frame_progress = 0.8662198

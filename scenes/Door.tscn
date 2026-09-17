@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://64kxgyo3w5c1"]
+
+[ext_resource type="Script" uid="uid://08m76ft6euqv" path="res://Scripts/Door.cs" id="1_yfgsh"]
+
+[node name="Area2D" type="Area2D" unique_id=575119893]
+script = ExtResource("1_yfgsh")
+
+[connection signal="body_entered" from="." to="." method="OnPlayerEntered"]
