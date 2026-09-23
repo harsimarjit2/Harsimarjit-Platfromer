@@ -11,7 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e620d159-a854-4641-96fb-6e7d09c29b37" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Platformer project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Platformer project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Enemy-Bat.tscn" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +103,9 @@
       <workItem from="1789579046817" duration="1318000" />
       <workItem from="1789664574323" duration="299000" />
       <workItem from="1789664980361" duration="296000" />
+      <workItem from="1790011356307" duration="1647000" />
+      <workItem from="1790098455781" duration="12000" />
+      <workItem from="1790098488021" duration="305000" />
     </task>
     <servers />
   </component>

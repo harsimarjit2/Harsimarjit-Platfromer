@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Platformer project"
-run/main_scene="uid://bv2m68sknwr87"
+run/main_scene="uid://b83ldij0d70ym"
 config/features=PackedStringArray("4.7", "C#", "Forward Plus")
 config/icon="res://assets/icon.svg"
 

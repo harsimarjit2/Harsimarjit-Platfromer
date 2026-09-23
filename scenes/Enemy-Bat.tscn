@@ -1,25 +1,26 @@
 [gd_scene format=3 uid="uid://c2bx52thxxd0l"]
 
-[ext_resource type="Texture2D" uid="uid://bphijw206kjk2" path="res://assets/Props/Bat_Sprite_Sheet.png" id="1_h6yp1"]
+[ext_resource type="Script" uid="uid://dutnptld30lv" path="res://scenes/EnemyBat.cs" id="1_mdql7"]
+[ext_resource type="Texture2D" uid="uid://bphijw206kjk2" path="res://assets/Props/Bat_Sprite_Sheet.png" id="2_en5kk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jb0m2"]
-atlas = ExtResource("1_h6yp1")
+atlas = ExtResource("2_en5kk")
 region = Rect2(0, 0, 16, 18)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r5wmm"]
-atlas = ExtResource("1_h6yp1")
+atlas = ExtResource("2_en5kk")
 region = Rect2(16, 0, 16, 18)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mef4j"]
-atlas = ExtResource("1_h6yp1")
+atlas = ExtResource("2_en5kk")
 region = Rect2(32, 0, 16, 18)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kg2g0"]
-atlas = ExtResource("1_h6yp1")
+atlas = ExtResource("2_en5kk")
 region = Rect2(48, 0, 16, 18)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d0m2d"]
-atlas = ExtResource("1_h6yp1")
+atlas = ExtResource("2_en5kk")
 region = Rect2(64, 0, 16, 18)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_e6ht7"]
@@ -45,8 +46,21 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Node2D" type="Node2D" unique_id=604425605]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e6ht7"]
+size = Vector2(15, 9)
+
+[node name="Bat" type="CharacterBody2D" unique_id=1436994444]
+script = ExtResource("1_mdql7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=789088317]
 sprite_frames = SubResource("SpriteFrames_e6ht7")
 frame_progress = 0.8662198
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2077642462]
+position = Vector2(-0.5, -2.5)
+shape = SubResource("RectangleShape2D_e6ht7")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=813928737]
+position = Vector2(0, -2)
+target_position = Vector2(8, 7)
+collide_with_areas = true
