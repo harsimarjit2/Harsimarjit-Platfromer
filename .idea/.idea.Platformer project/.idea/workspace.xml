@@ -12,7 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e620d159-a854-4641-96fb-6e7d09c29b37" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Platformer project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Platformer project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enemy-Bat.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/Enemy-Bat.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/Enemy-Bat.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/Player.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/Player.tscn" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5,
   &quot;fromUser&quot;: false
@@ -106,12 +108,15 @@
       <workItem from="1790011356307" duration="1647000" />
       <workItem from="1790098455781" duration="12000" />
       <workItem from="1790098488021" duration="305000" />
+      <workItem from="1790185110301" duration="972000" />
+      <workItem from="1790268855592" duration="837000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

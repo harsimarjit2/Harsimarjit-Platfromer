@@ -47,20 +47,22 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e6ht7"]
-size = Vector2(15, 9)
+size = Vector2(31.5, 16)
 
 [node name="Bat" type="CharacterBody2D" unique_id=1436994444]
 script = ExtResource("1_mdql7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=789088317]
+position = Vector2(10.5, -8)
+scale = Vector2(2.3125, 1.8888888)
 sprite_frames = SubResource("SpriteFrames_e6ht7")
 frame_progress = 0.8662198
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2077642462]
-position = Vector2(-0.5, -2.5)
+position = Vector2(10.25, -11)
 shape = SubResource("RectangleShape2D_e6ht7")
 
 [node name="RayCast2D" type="RayCast2D" parent="." unique_id=813928737]
-position = Vector2(0, -2)
-target_position = Vector2(8, 7)
+position = Vector2(11, -6)
+target_position = Vector2(11, 9)
 collide_with_areas = true
