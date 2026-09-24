@@ -307,7 +307,7 @@ size = Vector2(234, 11)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e6ht7"]
 size = Vector2(44, 63)
 
-[node name="Game" type="Node2D" unique_id=1010884311]
+[node name="Game2" type="Node2D" unique_id=1010884311]
 
 [node name="Player" parent="." unique_id=2050558961 instance=ExtResource("1_qu4a1")]
 position = Vector2(-1, -1)
@@ -394,3 +394,11 @@ shape = SubResource("RectangleShape2D_e6ht7")
 position = Vector2(12, 16)
 scale = Vector2(2.9375017, 2.9375017)
 texture = ExtResource("2_khinc")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1985091490]
+z_index = -4096
+offset_left = -1266.0
+offset_top = -965.0
+offset_right = 1907.0
+offset_bottom = 646.0
+color = Color(0.16078432, 0.6784314, 1, 1)
