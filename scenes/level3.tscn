@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dctmmo4y8wlqd" path="res://assets/Terrain/Grassland_Terrain_ExtraTiles.png" id="4_5mhml"]
 [ext_resource type="PackedScene" uid="uid://64kxgyo3w5c1" path="res://scenes/Door.tscn" id="5_rupth"]
 [ext_resource type="PackedScene" uid="uid://b2urjgjr02mtd" path="res://scenes/character_body_2d.tscn" id="6_6lxtr"]
+[ext_resource type="PackedScene" uid="uid://c2bx52thxxd0l" path="res://scenes/Enemy-Bat.tscn" id="7_b72m1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5ncpa"]
 texture = ExtResource("2_6lxtr")
@@ -291,6 +292,9 @@ sources/2 = SubResource("TileSetAtlasSource_hp6x6")
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_nuy6j"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5mhml"]
+size = Vector2(42.5, 24)
+
 [node name="Game" type="Node2D" unique_id=1010884311]
 
 [node name="TextureRect2" type="TextureRect" parent="." unique_id=1661179837]
@@ -347,3 +351,21 @@ zoom = Vector2(2, 2)
 limit_bottom = 170
 limit_smoothed = true
 position_smoothing_enabled = true
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=550579616]
+offset_left = 2905.0
+offset_top = -905.0
+offset_right = 3066.0
+offset_bottom = -867.0
+text = "The End You Win!!!"
+
+[node name="Bat" parent="." unique_id=1436994444 instance=ExtResource("7_b72m1")]
+position = Vector2(1260, -958)
+
+[node name="Area2D2" parent="Bat" unique_id=2011408815 instance=ExtResource("5_rupth")]
+position = Vector2(12, -16)
+LevelFilePath = "res://scenes/level3.tscn"
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Bat/Area2D2" unique_id=1095032752]
+position = Vector2(0.75, -2)
+shape = SubResource("RectangleShape2D_5mhml")

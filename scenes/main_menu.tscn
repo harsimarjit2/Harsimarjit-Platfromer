@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://c8wdw3gp6k4xe" path="res://assets/GrassLand_Example.png" id="1_06t4h"]
 [ext_resource type="Script" uid="uid://bj3dsdwen5etu" path="res://Scripts/MainMenu.cs" id="1_7vrkn"]
-[ext_resource type="Script" uid="uid://bj1rl2kiiprfv" path="res://scenes/Button.cs" id="3_bqqt6"]
+[ext_resource type="Script" uid="uid://bj1rl2kiiprfv" path="res://Scripts/Button.cs" id="3_bqqt6"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nuy6j"]
 texture = ExtResource("1_06t4h")
