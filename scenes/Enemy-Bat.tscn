@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c2bx52thxxd0l"]
 
-[ext_resource type="Script" uid="uid://dutnptld30lv" path="res://scenes/EnemyBat.cs" id="1_mdql7"]
+[ext_resource type="Script" path="res://scenes/EnemyBat.cs" id="1_mdql7"]
 [ext_resource type="Texture2D" uid="uid://bphijw206kjk2" path="res://assets/Props/Bat_Sprite_Sheet.png" id="2_en5kk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jb0m2"]
