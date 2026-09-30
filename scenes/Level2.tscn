@@ -373,5 +373,5 @@ position = Vector2(12, -16)
 LevelFilePath = "res://scenes/Level2.tscn"
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Bat/Area2D2" unique_id=1618012470]
-position = Vector2(0.75, -2)
+position = Vector2(-2, 4)
 shape = SubResource("RectangleShape2D_0jmjk")

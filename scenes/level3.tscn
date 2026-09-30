@@ -295,7 +295,7 @@ sources/2 = SubResource("TileSetAtlasSource_hp6x6")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5mhml"]
 size = Vector2(42.5, 24)
 
-[node name="Game" type="Node2D" unique_id=1010884311]
+[node name="Game3" type="Node2D" unique_id=1010884311]
 
 [node name="TextureRect2" type="TextureRect" parent="." unique_id=1661179837]
 z_index = -4000
@@ -367,5 +367,5 @@ position = Vector2(12, -16)
 LevelFilePath = "res://scenes/level3.tscn"
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Bat/Area2D2" unique_id=1095032752]
-position = Vector2(0.75, -2)
+position = Vector2(-2, 4)
 shape = SubResource("RectangleShape2D_5mhml")
