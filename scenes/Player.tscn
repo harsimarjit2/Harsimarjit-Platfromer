@@ -307,6 +307,9 @@ size = Vector2(234, 11)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e6ht7"]
 size = Vector2(44, 63)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_khinc"]
+size = Vector2(42.5, 24)
+
 [node name="Game2" type="Node2D" unique_id=1010884311]
 
 [node name="Player" parent="." unique_id=2050558961 instance=ExtResource("1_qu4a1")]
@@ -378,10 +381,6 @@ shape = SubResource("CircleShape2D_4ec1l")
 position = Vector2(334, -335)
 shape = SubResource("CircleShape2D_fk4dp")
 
-[node name="Bat" parent="." unique_id=1436994444 instance=ExtResource("7_cw2d6")]
-visible = false
-position = Vector2(73, -12)
-
 [node name="Area2D" parent="." unique_id=575119893 instance=ExtResource("6_70d11")]
 position = Vector2(686, -54)
 LevelFilePath = "res://scenes/Level2.tscn"
@@ -397,8 +396,19 @@ texture = ExtResource("2_khinc")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1985091490]
 z_index = -4096
-offset_left = -1266.0
-offset_top = -965.0
-offset_right = 1907.0
-offset_bottom = 646.0
+offset_left = -1262.0
+offset_top = -1009.0
+offset_right = 1911.0
+offset_bottom = 602.0
 color = Color(0.16078432, 0.6784314, 1, 1)
+
+[node name="Bat" parent="." unique_id=1436994444 instance=ExtResource("7_cw2d6")]
+position = Vector2(885, -2)
+
+[node name="Area2D2" parent="Bat" unique_id=949801922 instance=ExtResource("6_70d11")]
+position = Vector2(12, -16)
+LevelFilePath = "res://scenes/Player.tscn"
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Bat/Area2D2" unique_id=132817956]
+position = Vector2(-2, 3)
+shape = SubResource("RectangleShape2D_khinc")
