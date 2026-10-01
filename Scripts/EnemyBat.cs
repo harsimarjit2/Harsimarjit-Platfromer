@@ -24,7 +24,7 @@ public partial class EnemyBat : CharacterBody2D
 			velocity += GetGravity() * (float)delta;
 		}
 
-		// Move
+		
 		if (IsFacingRight)
 		{
 			velocity.X = Speed;
@@ -34,7 +34,7 @@ public partial class EnemyBat : CharacterBody2D
 			velocity.X = -Speed;
 		}
 
-		// Check if there is ground
+		
 		if (!GroundRay.IsColliding())
 		{
 			TurnAround();
@@ -43,14 +43,14 @@ public partial class EnemyBat : CharacterBody2D
 		Velocity = velocity;
 		MoveAndSlide();
 
-		// Polymorphism
+		
 		EnemyBehavior();
 	}
 
-	// Allows child enemies to have different behaviors
+	
 	protected virtual void EnemyBehavior()
 	{
-		// Base enemy behavior
+		
 	}
 
 	protected void TurnAround()

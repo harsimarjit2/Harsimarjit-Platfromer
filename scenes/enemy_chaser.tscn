@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bgmbuoxpmhj2q"]
 
-[ext_resource type="Script" uid="uid://dyepbcupdtucf" path="res://scenes/EnemyChaser.cs" id="1_l2vc3"]
+[ext_resource type="Script" uid="uid://dyepbcupdtucf" path="res://Scripts/EnemyChaser.cs" id="1_l2vc3"]
 [ext_resource type="Texture2D" uid="uid://cvtohtb4716di" path="res://assets/with_outline/Untitled design (4).png" id="2_x7y0m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4ifjj"]
@@ -42,6 +42,9 @@ animations = [{
 "speed": 7.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_nuy6j"]
+radius = 105.00119
+
 [node name="EnemyChaser" type="CharacterBody2D" unique_id=2073579985]
 script = ExtResource("1_l2vc3")
 
@@ -58,3 +61,12 @@ frame_progress = 0.53769624
 
 [node name="RayCast2D" type="RayCast2D" parent="." unique_id=41522147]
 target_position = Vector2(20, 21)
+
+[node name="DetectionZone" type="Area2D" parent="." unique_id=857104770]
+position = Vector2(6, 4.5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionZone" unique_id=665566439]
+shape = SubResource("CircleShape2D_nuy6j")
+
+[connection signal="body_entered" from="DetectionZone" to="." method="PlayerEnters"]
+[connection signal="body_exited" from="DetectionZone" to="." method="PlayerExits"]

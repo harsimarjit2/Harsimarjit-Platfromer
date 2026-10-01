@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://64kxgyo3w5c1" path="res://scenes/Door.tscn" id="6_f1ej7"]
 [ext_resource type="Texture2D" uid="uid://bnvxdvghk4hgq" path="res://assets/Props/GrassLand_Entry_2.png" id="7_oprun"]
 [ext_resource type="PackedScene" uid="uid://pj73ffes0id0" path="res://scenes/enemy_bat.tscn" id="8_a8ls1"]
-[ext_resource type="PackedScene" uid="uid://bgmbuoxpmhj2q" path="res://scenes/enemy_chaser.tscn" id="9_qfm1y"]
+[ext_resource type="PackedScene" uid="uid://cggq5s8v68jum" path="res://scenes/Enemy-Spike.tscn" id="9_bruh7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5ncpa"]
 texture = ExtResource("3_d2wvv")
@@ -311,6 +311,10 @@ size = Vector2(44, 63)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_khinc"]
 size = Vector2(30, 27.5)
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4jf3k"]
+radius = 3.0
+height = 46.0
+
 [node name="Game2" type="Node2D" unique_id=1010884311]
 
 [node name="Player" parent="." unique_id=2050558961 instance=ExtResource("1_ur7pv")]
@@ -414,5 +418,13 @@ LevelFilePath = "res://scenes/Player.tscn"
 position = Vector2(-12, 12.25)
 shape = SubResource("RectangleShape2D_khinc")
 
-[node name="EnemyChaser" parent="." unique_id=2073579985 instance=ExtResource("9_qfm1y")]
-position = Vector2(91, -32)
+[node name="Spike" parent="." unique_id=2050347260 instance=ExtResource("9_bruh7")]
+position = Vector2(522, -278)
+
+[node name="Area2D2" parent="Spike" unique_id=443385659 instance=ExtResource("6_f1ej7")]
+position = Vector2(12, -16)
+LevelFilePath = "res://scenes/Player.tscn"
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Spike/Area2D2" unique_id=24498398]
+position = Vector2(-12, 15)
+shape = SubResource("CapsuleShape2D_4jf3k")

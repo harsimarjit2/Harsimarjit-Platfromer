@@ -24,7 +24,7 @@ public partial class Player : CharacterBody2D
 			velocity += GetGravity() * (float)delta;
 		}
 
-		// Handle Jump.
+
 		if (Input.IsActionJustPressed("ui_accept") && IsOnFloor())
 		{
 			velocity.Y = JumpVelocity;
@@ -59,7 +59,7 @@ public partial class Player : CharacterBody2D
 			_animatedSprite.Play("Jump");    
 		}
 
-		// --- APPLY MOVEMENT ---
+
 		if (direction != Vector2.Zero)
 		{
 			velocity.X = direction.X * Speed;
