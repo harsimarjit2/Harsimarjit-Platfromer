@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://bgmbuoxpmhj2q"]
+
+[ext_resource type="Script" uid="uid://dyepbcupdtucf" path="res://scenes/EnemyChaser.cs" id="1_l2vc3"]
+[ext_resource type="Texture2D" uid="uid://cvtohtb4716di" path="res://assets/with_outline/Untitled design (4).png" id="2_x7y0m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ifjj"]
+size = Vector2(24, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wuvmb"]
+atlas = ExtResource("2_x7y0m")
+region = Rect2(0, 0, 79, 69)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ddd7"]
+atlas = ExtResource("2_x7y0m")
+region = Rect2(79, 0, 79, 69)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xdwg6"]
+atlas = ExtResource("2_x7y0m")
+region = Rect2(158, 0, 79, 69)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ifjj"]
+atlas = ExtResource("2_x7y0m")
+region = Rect2(237, 0, 79, 69)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x7y0m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wuvmb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ddd7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xdwg6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ifjj")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 7.0
+}]
+
+[node name="EnemyChaser" type="CharacterBody2D" unique_id=2073579985]
+script = ExtResource("1_l2vc3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=188390310]
+position = Vector2(6, 4.5)
+shape = SubResource("RectangleShape2D_4ifjj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1559703642]
+position = Vector2(-4.7683716e-07, 0)
+scale = Vector2(0.5973731, 0.5973732)
+sprite_frames = SubResource("SpriteFrames_x7y0m")
+autoplay = "default"
+frame_progress = 0.53769624
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=41522147]
+target_position = Vector2(20, 21)

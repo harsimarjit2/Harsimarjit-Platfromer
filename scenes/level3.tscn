@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dctmmo4y8wlqd" path="res://assets/Terrain/Grassland_Terrain_ExtraTiles.png" id="4_5mhml"]
 [ext_resource type="PackedScene" uid="uid://64kxgyo3w5c1" path="res://scenes/Door.tscn" id="5_rupth"]
 [ext_resource type="PackedScene" uid="uid://b2urjgjr02mtd" path="res://scenes/character_body_2d.tscn" id="6_6lxtr"]
-[ext_resource type="PackedScene" uid="uid://c2bx52thxxd0l" path="res://scenes/Enemy-Bat.tscn" id="7_b72m1"]
+[ext_resource type="PackedScene" uid="uid://pj73ffes0id0" path="res://scenes/enemy_bat.tscn" id="7_b72m1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5ncpa"]
 texture = ExtResource("2_6lxtr")
@@ -293,7 +293,7 @@ sources/2 = SubResource("TileSetAtlasSource_hp6x6")
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_nuy6j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5mhml"]
-size = Vector2(42.5, 24)
+size = Vector2(29, 26)
 
 [node name="Game3" type="Node2D" unique_id=1010884311]
 
@@ -336,10 +336,10 @@ shape = SubResource("WorldBoundaryShape2D_nuy6j")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=469180953]
 z_index = -4096
-offset_left = -2487.0
-offset_top = -1852.0
-offset_right = 3852.0
-offset_bottom = 270.0
+offset_left = -2402.0
+offset_top = -1821.0
+offset_right = 3937.0
+offset_bottom = 301.0
 color = Color(0.16078432, 0.6784314, 1, 1)
 
 [node name="Player" parent="." unique_id=2050558961 instance=ExtResource("6_6lxtr")]
@@ -359,13 +359,13 @@ offset_right = 3066.0
 offset_bottom = -867.0
 text = "The End You Win!!!"
 
-[node name="Bat" parent="." unique_id=1436994444 instance=ExtResource("7_b72m1")]
-position = Vector2(1260, -958)
+[node name="Enemy Bat" parent="." unique_id=1414507546 instance=ExtResource("7_b72m1")]
+position = Vector2(1272, -987)
 
-[node name="Area2D2" parent="Bat" unique_id=2011408815 instance=ExtResource("5_rupth")]
+[node name="Area2D2" parent="Enemy Bat" unique_id=1178444007 instance=ExtResource("5_rupth")]
 position = Vector2(12, -16)
 LevelFilePath = "res://scenes/level3.tscn"
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Bat/Area2D2" unique_id=1095032752]
-position = Vector2(-2, 4)
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Enemy Bat/Area2D2" unique_id=2034424398]
+position = Vector2(-12.5, 11)
 shape = SubResource("RectangleShape2D_5mhml")

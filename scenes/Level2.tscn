@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://64kxgyo3w5c1" path="res://scenes/Door.tscn" id="5_v8268"]
 [ext_resource type="PackedScene" uid="uid://b2urjgjr02mtd" path="res://scenes/character_body_2d.tscn" id="6_rcugv"]
 [ext_resource type="Texture2D" uid="uid://cqtkbeqa5fo82" path="res://assets/Props/GrassLand_Entry_1.png" id="7_qwp14"]
-[ext_resource type="PackedScene" uid="uid://c2bx52thxxd0l" path="res://scenes/Enemy-Bat.tscn" id="8_xpq2v"]
+[ext_resource type="PackedScene" uid="uid://pj73ffes0id0" path="res://scenes/enemy_bat.tscn" id="8_xpq2v"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5ncpa"]
 texture = ExtResource("2_qwp14")
@@ -297,7 +297,7 @@ sources/2 = SubResource("TileSetAtlasSource_hp6x6")
 size = Vector2(50.5, 85.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0jmjk"]
-size = Vector2(42.5, 24)
+size = Vector2(30, 26)
 
 [node name="Game" type="Node2D" unique_id=1010884311]
 
@@ -365,13 +365,13 @@ position = Vector2(236.25, -65.50001)
 scale = Vector2(4.4687524, 4.4687524)
 texture = ExtResource("7_qwp14")
 
-[node name="Bat" parent="." unique_id=1436994444 instance=ExtResource("8_xpq2v")]
-position = Vector2(46, -435)
+[node name="Enemy Bat" parent="." unique_id=1414507546 instance=ExtResource("8_xpq2v")]
+position = Vector2(22, -451)
 
-[node name="Area2D2" parent="Bat" unique_id=183425757 instance=ExtResource("5_v8268")]
+[node name="Area2D2" parent="Enemy Bat" unique_id=1924464701 instance=ExtResource("5_v8268")]
 position = Vector2(12, -16)
 LevelFilePath = "res://scenes/Level2.tscn"
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Bat/Area2D2" unique_id=1618012470]
-position = Vector2(-2, 4)
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Enemy Bat/Area2D2" unique_id=1186217215]
+position = Vector2(-12, 12)
 shape = SubResource("RectangleShape2D_0jmjk")
