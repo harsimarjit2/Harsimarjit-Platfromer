@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxjyp1e1a1aes"
-path="res://.godot/imported/DEFEND.png-b87f1cb436e858f9f9b952c686631d5f.ctex"
+uid="uid://7pq28jwr3ynr"
+path="res://.godot/imported/long_metal_spike.png-f902fead2eb454c7d14a654841f731f4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/without_outline/DEFEND.png"
-dest_files=["res://.godot/imported/DEFEND.png-b87f1cb436e858f9f9b952c686631d5f.ctex"]
+source_file="res://assets/long_metal_spike.png"
+dest_files=["res://.godot/imported/long_metal_spike.png-f902fead2eb454c7d14a654841f731f4.ctex"]
 
 [params]
 

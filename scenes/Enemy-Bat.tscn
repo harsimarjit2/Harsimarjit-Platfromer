@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://c2bx52thxxd0l"]
+[gd_scene format=3 uid="uid://caipn5oadyeth"]
 
-[ext_resource type="Script" path="res://scenes/EnemyBat.cs" id="1_mdql7"]
+[ext_resource type="Script" uid="uid://dutnptld30lv" path="res://Scripts/EnemyBat.cs" id="1_mdql7"]
 [ext_resource type="Texture2D" uid="uid://bphijw206kjk2" path="res://assets/Props/Bat_Sprite_Sheet.png" id="2_en5kk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jb0m2"]
@@ -56,6 +56,7 @@ script = ExtResource("1_mdql7")
 position = Vector2(10.5, -8)
 scale = Vector2(2.3125, 1.8888888)
 sprite_frames = SubResource("SpriteFrames_e6ht7")
+autoplay = "default"
 frame_progress = 0.8662198
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2077642462]

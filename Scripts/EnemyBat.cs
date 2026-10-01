@@ -5,9 +5,9 @@ public partial class EnemyBat : CharacterBody2D
 {
 	public const float Speed = 150.0f;
 
-	private bool IsFacingRight = true;
+	protected bool IsFacingRight = true;
 
-	private RayCast2D GroundRay;
+	protected RayCast2D GroundRay;
 
 	public override void _Ready()
 	{
@@ -24,7 +24,7 @@ public partial class EnemyBat : CharacterBody2D
 			velocity += GetGravity() * (float)delta;
 		}
 
-		// Move to the right
+		
 		if (IsFacingRight)
 		{
 			velocity.X = Speed;
@@ -34,7 +34,7 @@ public partial class EnemyBat : CharacterBody2D
 			velocity.X = -Speed;
 		}
 
-		// Check if there is ground in front of the enemy
+		
 		if (!GroundRay.IsColliding())
 		{
 			TurnAround();
@@ -42,18 +42,26 @@ public partial class EnemyBat : CharacterBody2D
 
 		Velocity = velocity;
 		MoveAndSlide();
+
+		
+		EnemyBehavior();
 	}
 
-	private void TurnAround()
+	
+	protected virtual void EnemyBehavior()
 	{
-		// Change direction
+		
+	}
+
+	protected void TurnAround()
+	{
 		IsFacingRight = !IsFacingRight;
 
-		// Flip the sprite
-		AnimatedSprite2D sprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
+		AnimatedSprite2D sprite =
+			GetNode<AnimatedSprite2D>("AnimatedSprite2D");
+
 		sprite.FlipH = !IsFacingRight;
 
-		// Flip the RayCast2D
 		GroundRay.TargetPosition = new Vector2(
 			-GroundRay.TargetPosition.X,
 			GroundRay.TargetPosition.Y

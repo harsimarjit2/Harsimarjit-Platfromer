@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1u6kln3o71pu"
-path="res://.godot/imported/IDLE.png-73b3e9d4b7b53bd914bb0ce270d71800.ctex"
+uid="uid://b0xll7y8oqq72"
+path="res://.godot/imported/long_metal_spike.png-173d4c12db8c1c2a1685a94bd6930b59.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/without_outline/IDLE.png"
-dest_files=["res://.godot/imported/IDLE.png-73b3e9d4b7b53bd914bb0ce270d71800.ctex"]
+source_file="res://assets/Background/long_metal_spike.png"
+dest_files=["res://.godot/imported/long_metal_spike.png-173d4c12db8c1c2a1685a94bd6930b59.ctex"]
 
 [params]
 

@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cggq5s8v68jum"]
+
+[ext_resource type="Texture2D" uid="uid://7pq28jwr3ynr" path="res://assets/long_metal_spike.png" id="1_brok1"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=2050347260]
+position = Vector2(0, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1764481709]
+position = Vector2(-1.9073486e-06, -1.0000019)
+scale = Vector2(0.4044117, 0.4044117)
+texture = ExtResource("1_brok1")
